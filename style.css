@@ -278,12 +278,18 @@ h3{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1200px){
     .about-col-1{
       flex-basis: 100%;
     }
     .skill{
       flex-basis:100%;
+    }
+    .sub-title{
+       font-size: 30px;
+    }
+    .p{
+      font-size: 25px;
     }
     
 } 
