@@ -22,6 +22,7 @@ body{
     background-image: url();
     background-size: cover;
     background-position: center;
+    
 
  }
  
@@ -237,6 +238,13 @@ h3{
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
 }
+.services-list div iconify-icon{
+  padding: 0 30px;
+  font-size: 50px;
+  margin-bottom: 25px;
+  
+
+}
 .services-list div ion-icon{
   font-size: 50px;
   margin-bottom: 25px;
@@ -293,3 +301,8 @@ h3{
     }
     
 } 
+@media only screen and (max-width: 600px){
+  .center h5 span{
+    font-size: 19.8px;
+  }
+}
