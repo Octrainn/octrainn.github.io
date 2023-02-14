@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/68df296dc2.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="app.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h1 class="logo"><span>A</span>kshay Vakil</h1>
+                <ul class="menu">
+                <li><a href ="#container">Home</a></li>
+                <li><a href ="#about">About Me</a></li>
+                <li><a href ="#services">Projects</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <H1><span>Hi, I'm Akshay!</span></H1>
+                    <div class="center">
+                        <h5><span class ="auto-type"></span></h5>
+                    </div>
+                </div>
+                <script>
+                    Element.scrollIntoView({
+                 behaviour: "smooth"  ,
+                block:"start",
+                 inline: "nearest"
+                                    })
+                </script>
+            
+            
+                <script>
+                    var typed = new Typed(".auto-type",  {
+                        strings: ["Currently a Computer Science Student", "at Toronto Metropolitan University"],
+                        typeSpeed: 80,
+                        backSpeed: 50,
+                        loop: true
+                    })
+                </script>
+        
+            </div>
+            
+        </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/LinkedIn.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hey how's it going, I appreciate you giving your time to check out my website :). I'm currently a 
+                        Computer Science student at Toronto Metropolitan University. I'm very passionate when it comes to 
+                        problem solving, and creating fun projects! As for my hobbies, I love watching anime, and playing video games!</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('language')" >Language Proficiency</p>
+                        <p class="tab-links" onclick="opentab('contacts')" >Contact Me</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Java, Javascript, SQL, Assembly</li>
+                            <li><span>FrontEnd Frameworks</span><br>Bootstrap, Node.js, Next.js, React, Angular, Tailwind</li>
+                            <li><span>Additional Web Development Tools</span><br>HTML, CSS</li>
+                            <li><span>Currently Learning </span><br>Tensor Flow, Neural Networks, Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <div class="skill">Python
+                                <div class="skill-bar">
+                                    <div class="meter" meter="80%" style="max-width:80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">Java
+                                <div class="skill-bar">
+                                    <div class="meter" meter="50%" style="max-width:50%" ></div>
+                            </div>
+                            <div class="skill">JavaScript
+                                <div class="skill-bar">
+                                    <div class="meter" meter="60%" style="max-width:60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">HTML
+                                <div class="skill-bar">
+                                    <div class="meter" meter="85%" style="max-width:85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">CSS
+                                <div class="skill-bar">
+                                    <div class="meter" meter="70%" style="max-width:70%"></div>
+                                </div>
+                            <div class="skill">Assembly
+                                <div class="skill-bar">
+                                    <div class="meter" meter="15%" style="max-width:15%"></div>
+                                </div>
+                            </div>
+                
+                                
+                            </div>
+
+
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="contacts">
+                                <a class="social-icon" href="https://www.linkedin.com/in/akshay-vakil-629383231/">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                                <a class ="icon" href="https://github.com/Octrainn">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                                <a class = "email" href="mailto:akshay2334@hotmail.com">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <ion-icon name="logo-python"> </ion-icon> 
+                <iconify-icon icon="logos:tensorflow"></iconify-icon>
+                <h2>Tensor Flow Project W.I.P </h2>
+                <p>This TensorFlow Model I am currently working on aims to use a neural network provided with data that has been trained to 
+                    be able to differeinate a human versus a dog, based on certain images.</p>
+               <span><a href="https://github.com/Octrainn/TensorFlowModel">Click here to check it out!</a> </span>
+            </div>
+            <div>
+                <ion-icon name="logo-discord"></ion-icon>
+                <h2>Discord Bot Weaver</h2>
+                <p>Discord I made with Python, currently adding new features </p>
+                <a href="https://github.com/Octrainn/DiscordBot">Check out my code!</a>
+            </div>
+            <div>
+                <ion-icon name="logo-html5"></ion-icon>
+                <ion-icon name="logo-css3"></ion-icon>
+                <h2>Health Policy Student Association </h2>
+                <p>A project proposal website that is intended to function as a nonprofit organisation that uses information on corporate health and policies to inform and raise awareness among students,  </p>
+                <a href="https://github.com/ChrisMikhail/hpsa-website">Currently private, source code will be available later. </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p><i class="fa-regular fa-copyright"></i>     Akshay Vakil, 2023</p>
+</div>
+    
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+        
+
+
+
+
+    </script>
+
+</body>
+</html>
