@@ -35,7 +35,10 @@ body{
  }
  .container{
     padding: 20px 2%;
- }
+    display: flex;
+    flex-direction: column;
+
+  }
   nav{
     display: flex;
     align-items: center;
@@ -114,11 +117,21 @@ body{
   margin: 1.2rem 0 2.5rem;
 }
 .tab-links{
-  margin-right: 50px;
-  font-size: 18px;
+  margin-right: 20px;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   position:relative;
+}
+@media screen and (max-width: 480px) {
+  .tab-links {
+    margin-right: 1.2rem;
+    font-size:1.1rem;
+  }
+  .tab-links.active-link:second-child::after{
+    max-width: 100%;
+  }
+  
 }
 .tab-links::after{
   content: '';
@@ -238,6 +251,7 @@ h3{
 
 }
 
+
 #services{
   padding: 30px 0;
 }
@@ -312,6 +326,7 @@ h3{
     .about-col-1{
       flex-basis:100%;
 
+
     }
     .about-col-2{
       flex-basis: 100%;
@@ -333,4 +348,9 @@ h3{
   .center h5 span{
     font-size: 2.3rem;
   }
+  .tab-links:last-child {
+   
+  }
+
 }
+
